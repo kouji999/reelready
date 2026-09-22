@@ -1,0 +1,22 @@
+{
+  "name": "reelready",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Intelligent video delivery layer: analyze, optimize, validate, deliver for social platforms",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "engine": "node packages/engine/src/cli.js",
+    "dev": "node apps/server/src/index.js",
+    "build": "npm run build -w @reelready/web",
+    "start": "node apps/server/src/index.js",
+    "test": "node --test packages/engine/test/",
+    "server": "node apps/server/src/index.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}

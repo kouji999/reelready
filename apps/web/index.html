@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReelReady | Video delivery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><div class="brand"><span class="mark">RR</span><span>REELREADY</span></div><span class="status"><i></i> ENGINE ONLINE</span></header>
+    <section class="hero"><p class="eyebrow">VIDEO DELIVERY LAYER / 001</p><h1>Make every frame<br><em>ready to ship.</em></h1><p class="lede">Analyze, optimize, and validate short-form video for social delivery.</p></section>
+    <section class="workspace">
+      <form id="upload-form" class="upload-panel"><label for="file" class="dropzone"><span class="upload-icon">↑</span><strong>Drop video here</strong><span>or choose a file · MP4, MOV, WEBM · max 250 MB</span><input id="file" name="file" type="file" accept="video/*" required></label><button type="submit">Analyze video <span>↗</span></button></form>
+      <section id="analysis" class="panel hidden"><div class="panel-head"><div><p class="eyebrow">ANALYSIS / COMPLETE</p><h2 id="filename">Video metadata</h2></div><span class="badge" id="validation-badge">READY</span></div><div class="metrics" id="metrics"></div><div class="controls"><label>Quality profile<select id="mode"><option value="fast">Fast · 5 Mbps</option><option value="balanced" selected>Balanced · 8 Mbps</option><option value="maximum">Maximum · 12 Mbps</option></select></label><button id="optimize" type="button">Optimize video <span>↗</span></button></div></section>
+      <section id="result" class="panel hidden"><p class="eyebrow">DELIVERY / COMPLETE</p><h2>Your reel is ready.</h2><p id="result-copy"></p><a id="download" class="download" href="#">Download optimized MP4 <span>↓</span></a></section>
+      <p id="message" class="message" role="status"></p>
+    </section>
+  </main>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

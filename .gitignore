@@ -1,0 +1,6 @@
+node_modules/
+.env
+.env.*
+media/out/*
+media/samples/*
+!.gitkeep

@@ -1,0 +1,1 @@
+{"name":"@reelready/engine","version":"0.1.0","type":"module","main":"src/index.js","bin":{"reelready":"src/cli.js"},"scripts":{"test":"node --test test/"},"dependencies":{}}

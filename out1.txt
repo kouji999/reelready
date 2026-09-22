@@ -1,0 +1,33 @@
+node:internal/modules/cjs/loader:1520
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\raso8\reelready\packages\engine\test'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1517:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1122:12)
+    at Module._load (node:internal/modules/cjs/loader:1294:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.18.0
+??? packages\engine\test (53.0065ms)
+??? tests 1
+??? suites 0
+??? pass 0
+??? fail 1
+??? cancelled 0
+??? skipped 0
+??? todo 0
+??? duration_ms 60.2583
+
+??? failing tests:
+
+test at packages\engine\test:1:1
+??? packages\engine\test (53.0065ms)
+  'test failed'
